@@ -11,7 +11,7 @@
 
 body {
     font-family: 'vazir';
-    direction: rtl;
+    direction: ltr;
     display: flex;
     flex-direction: column;
     justify-content: center;
