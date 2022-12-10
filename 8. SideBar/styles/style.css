@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'vazir';
+    direction: ltr;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    background: #1d0877;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column;
+}
+
+header h2{
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+header p{
+    color: #e9e9e9;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.content{
+    width: 900px;
+    margin: 50px auto;
+    font-size: 17px;
+}
+
+.sideBar{
+    height: 100vh;
+    position: absolute;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    background: #311b92;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    transition: left .4s ease-in-out;
+    visibility: hidden;
+}
+
+.sideBar.active{
+    left: 0;
+}
+
+.sideBar img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sideBar .btn{
+    visibility: visible;
+}
+
+.sideBar ul{
+    list-style: none;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.sideBar ul li{
+    text-align: center;
+    border-bottom: 1px solid #616161;
+    border-top: 1px solid #616161;
+    transition: background .3s ease-in-out;
+}
+
+.sideBar ul li:hover{
+    background: #3b21ac;
+}
+
+.sideBar ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+.sideBar .btn{
+    position: absolute;
+    right: -40px;
+    top: 20;
+    background: #3314a5;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sideBar .btn svg{
+    font-size: 20px;
+    color: #fff;
+    animation: fa-spin 7s infinite linear;
+}
