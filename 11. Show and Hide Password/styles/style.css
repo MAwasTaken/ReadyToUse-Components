@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'vazir';
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 5px solid #cc0000;
+}
+
+.password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 40px;
+    position: relative;
+}
+
+.password input{
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'vazir';
+    border: 2px solid #ccc;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+}
+
+.toggle{
+    position: absolute;
+    right: 50px;
+}
+
+.fa-eye-slash{
+    display: none;
+}
+
+.toggle svg{
+    color: #505050;
+    opacity: .7;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all .2s ease-in-out;
+}
+
+.toggle svg:hover{
+    opacity: 1;
+    font-size: 27px;
+    color: #16a085;
+}
+
+.hide .fa-eye{
+    display: none;
+}
+
+.hide .fa-eye-slash{
+    display: block;
+}
