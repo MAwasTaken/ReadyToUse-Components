@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'vazir';
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#open{
+    background: #2180d8;
+    border: 3px solid #2180d8;
+    font-family: 'vazir';
+    color: #fff;
+    padding: 10px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    border-radius: 15px;
+}
+
+#open:hover{
+    background: #fff;
+    color: #000;
+}
+
+.modalContainer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease-in-out;
+}
+
+.modalContainer.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalContainer .modal{
+    width: 650px;
+    padding: 10px;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.closeContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#close{
+    background: #2180d8;
+    border: 3px solid #2180d8;
+    font-family: 'vazir';
+    color: #fff;
+    padding: 5px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    margin: 20px 10px;
+    border-radius: 15px;
+}
+
+#close:hover{
+    background: #fff;
+    color: rgb(5, 38, 70);
+}
