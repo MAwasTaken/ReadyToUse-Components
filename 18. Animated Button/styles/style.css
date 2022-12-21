@@ -56,6 +56,15 @@ span{
     transform: translate(-50%, -50%);
 }
 
+#clickSpan{
+    background: #333;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
 @keyframes animate{
     0%{
         width: 0;
