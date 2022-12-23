@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'vazir';
+    direction: ltr;
+    background: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background: #fafafa;
+    padding: 50px;
+    box-sizing: border-box;
+    transition: all .5s linear;
+    transform-origin: top right;
+}
+
+.container.show-nav {
+    transform: rotate(20deg);
+}
+
+.container.show-nav .circle {
+    transform: rotate(-80deg);
+}
+
+.container.show-nav+nav li {
+    transform: translateX(0);
+    transition-delay: .2s;
+}
+
+.circle-container {
+    position: fixed;
+    right: -100px;
+    top: -100px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background: #faa000;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle button {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    height: 100px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    transition: transform .5s linear;
+}
+
+.circle #open {
+    right: 60%;
+}
+
+.circle #close {
+    top: 40%;
+    transform: rotate(75deg);
+    transform-origin: top right;
+}
+
+.content {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content small {
+    color: #666;
+}
+
+.content p {
+    line-height: 25px;
+}
+
+.content h3 {
+    padding: 20px 0;
+}
+
+nav {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    color: #fff;
+    margin: 20px;
+    cursor: pointer;
+    transform: translateX(200%);
+    transition: transform .4s linear;
+}
+
+nav ul li svg {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+nav ul li+li {
+    margin-left: -30px;
+    transform: translateX(250%);
+}
+
+nav ul li+li+li {
+    margin-left: -80px;
+    transform: translateX(300%);
+}
