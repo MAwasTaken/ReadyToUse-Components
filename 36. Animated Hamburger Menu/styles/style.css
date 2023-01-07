@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+nav {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+nav.show ul {
+    width: 450px;
+    opacity: 1;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    box-shadow: -7px 9px 17px 0px #00000017;
+    border-radius: 5px;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all .4s ease-in-out;
+    padding: 20px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.close {
+    position: absolute;
+    top: 6%;
+    right: -80px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/hamburger.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 14px 0px #00000017;
+    background-color: #ffff;
+    cursor: pointer;
+}
+
+.closeBtn {
+    background-image: url(../img/close.svg);
+    transform: rotate(360deg);
+    transition: all .3s ease-in-out;
+}
