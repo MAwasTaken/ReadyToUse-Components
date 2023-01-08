@@ -48,12 +48,12 @@ header ul li a {
     transition: all .3s ease-in-out;
 }
 
-header ul li.active a{
+header ul li.active a {
     background: #c00;
     color: #fff;
 }
 
-main .product{
+main .product {
     width: 100%;
     height: 150px;
 }
@@ -67,7 +67,7 @@ main .product ul {
     flex-wrap: wrap;
 }
 
-main .product ul li{
+main .product ul li {
     width: calc(25% - 20px);
     background: #eee;
     list-style: none;
@@ -75,7 +75,7 @@ main .product ul li{
     transition: all .5s ease-in-out;
 }
 
-main .product ul li img{
+main .product ul li img {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -85,7 +85,7 @@ main .product ul li p {
     padding: 0 10px;
 }
 
-main .product ul li h4{
+main .product ul li h4 {
     text-align: center;
     padding: 0 10px;
     color: green;
