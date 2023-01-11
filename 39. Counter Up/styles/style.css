@@ -22,29 +22,29 @@ body {
     background-position: center;
 }
 
-.container{
+.container {
     width: 1440px;
     margin: auto;
 }
 
-.counter-section{
+.counter-section {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.counter-section .counter-box{
+.counter-section .counter-box {
     width: calc(25% - 20px);
     text-align: center;
     color: #fff;
 }
 
-.counter-section .counter-box svg{
+.counter-section .counter-box svg {
     font-size: 60px;
     color: #faa000;
 }
 
-.counter-section .counter-box .counter{
+.counter-section .counter-box .counter {
     font-size: 30px;
     padding: 20px 0;
 }
