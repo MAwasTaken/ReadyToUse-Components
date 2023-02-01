@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Country Code Selector</title>
+</head>
+<body>
+
+    <form action="">
+        <div>
+            <label>Country</label>
+            <select name="country" id="country">
+                <option value="+1">America (+1)</option>
+                <option value="+98">Iran (+98)</option>
+                <optgroup label="Other Countries">
+                    <option value="+49">Germany (+49)</option>
+                    <option value="+93">Afghanistan (+93)</option>
+                    <option value="+39">Italy (+39)</option>
+                    <option value="+34">Spain (+39)</option>
+                    <option value="+32">Belgium (+32)</option>
+                    <option value="+55">Brazil (+55)</option>
+                    <option value="+385">Croatia (+385)</option>
+                    <option value="+46">Sweden (+46)</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label>Phone Number</label>
+            <span id="select_country">+1:</span>
+            <input type="tel" maxlength="10" placeholder="Phone number">
+        </div>
+
+        <input type="submit" value="Send code">
+    </form>
+    
+    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
