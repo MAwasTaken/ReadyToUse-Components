@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazir.eot");
+    src: url("../fonts/vazir.ttf") format("truetype"),
+        url("../fonts/vazir.woff2") format("woff2"),
+        url("../fonts/vazir.woff") format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "vazir";
+    direction: ltr;
+    height: 4000px;
+    background: #222;
+}
+
+.progress-section {
+    position: fixed;
+    right: 50px;
+    top: 400px;
+    width: 45px;
+    height: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    transition: all 0.3s ease-out;
+}
+
+.progress-bar-wrap {
+    position: relative;
+    width: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(70, 70, 70);
+}
+
+.progress-bar {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: rgb(189, 189, 189);
+    bottom: 0;
+}
+
+.progress-bar-num {
+    color: #fff;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+}
