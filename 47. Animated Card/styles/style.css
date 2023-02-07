@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazir.eot");
+    src: url("../fonts/vazir.ttf") format("truetype"),
+        url("../fonts/vazir.woff2") format("woff2"),
+        url("../fonts/vazir.woff") format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "vazir";
+    direction: ltr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    height: 100vh;
+    margin: auto;
+}
+
+.container {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(45deg, #e01a00, #ae31d9);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.container:hover {
+    width: 350px;
+    height: 470px;
+    border-radius: 5px;
+}
+
+.container .wrapper img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}
+
+.container:hover .wrapper img.active {
+    width: 350px;
+    height: 470px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    object-fit: cover;
+    background-position: center;
+    
+}
+
+.container .wrapper .title {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.container .wrapper .place {
+    color: #e0e0e0;
+    font-size: 17px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.content {
+    color: #e0e0e0;
+    font-size: 17px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.content .button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.content .button .btn {
+    width: 150px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.content .button .btn button {
+    width: 100%;
+    height: 100%;
+    font-family: "vazir";
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.content .button .btn button:hover {
+    transform: scale(0.95);
+}
+
+.icons {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.icons.active { 
+    display: none;
+}
+
+.icons li {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 5px 0;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.container:hover .icons li {
+    opacity: 1;
+}
+
+.container:hover .icons li:nth-child(2) {
+    transition-delay: .2s;
+}
+
+.container:hover .icons li:nth-child(3) {
+    transition-delay: .4s;
+}
+
+.icons li a {
+    color: #7b00e0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
