@@ -1,0 +1,181 @@
+@font-face {
+	font-family: "vazir";
+	src: url("../fonts/vazir.eot");
+	src: url("../fonts/vazir.ttf") format("truetype"), url("../fonts/vazir.woff2") format("woff2"), url("../fonts/vazir.woff") format("woff");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "vazir";
+	direction: ltr;
+	height: 100vh;
+}
+
+.container {
+	width: 900px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 100%;
+	padding: 15px;
+	z-index: 1;
+}
+
+.header .logo a {
+	color: #333;
+	font-size: 30px;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.header .nav-toggler span {
+	width: 24px;
+	height: 3px;
+	background-color: #fff;
+	cursor: pointer;
+	position: relative;
+	display: block;
+}
+
+.header .nav-toggler {
+	width: 45px;
+	height: 45px;
+	background: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 100000;
+}
+
+.header .nav-toggler span::before,
+.header .nav-toggler span::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.header .nav-toggler span::before {
+	top: -8px;
+}
+
+.header .nav-toggler span::after {
+	top: 8px;
+}
+
+.nav-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+	transform: translateX(100%);
+}
+
+.nav-overlay.open {
+	transform: translateX(0);
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 260px;
+	height: 100%;
+	background-color: #111;
+	z-index: 1000;
+	transform: translateX(-260px);
+}
+
+nav.open {
+	transform: translateX(0);
+}
+
+nav .head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #d5d5d5;
+	padding: 0 20px;
+	padding: 10px 20px;
+	border-bottom: 1px solid #333;
+	z-index: 1000;
+}
+
+nav .head strong {
+	font-size: 16px;
+}
+
+nav .head .close svg {
+	font-size: 22px;
+	cursor: pointer;
+}
+
+nav ul {
+	list-style: none;
+	padding: 10px 0;
+}
+
+nav ul li {
+	display: block;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	padding: 8px 15px;
+	display: block;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+}
+
+nav li a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background: #fff;
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+}
+
+nav li a:hover::before {
+	width: 100%;
+}
+
+nav li a:hover {
+	color: #000;
+}
+
+.home-section {
+	width: 100%;
+	height: 100%;
+	background: url(../img/home-bg.jpg);
+	background-size: cover;
+	background-position: center;
+}

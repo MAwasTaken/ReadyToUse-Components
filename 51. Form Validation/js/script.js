@@ -28,8 +28,8 @@ function checkInput() {
 	else setSuccess(password);
 
 	if (password2Value === "") setError(password2, "* Required!");
-    else if (password2Value !== passwordValue) setError(password2, "* Passwords Are Not The Same!")
-    else setSuccess(password2)
+	else if (password2Value !== passwordValue) setError(password2, "* Passwords Are Not The Same!");
+	else setSuccess(password2);
 }
 
 function setError(input, message) {

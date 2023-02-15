@@ -73,7 +73,7 @@ button {
 }
 
 .form-control.success .fa-check-circle {
-    visibility: visible;
+	visibility: visible;
 }
 
 .form-control label {
