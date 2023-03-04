@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Limited Textarea 2</title>
+</head>
+<body>
+
+    <h1>Plaease Enter Your Message</h1>
+
+    <div class="container">
+        <form action="">
+            <div class="input-group">
+                <input type="text" class="input-control count-chars" placeholder="Your Name" data-max-chars="20">
+                <div class="input-msg text-red"></div>
+            </div>
+            <div class="input-group">
+                <textarea placeholder="Your Message" data-max-chars="60" class="input-control count-chars"></textarea>
+                <div class="input-msg text-orange"></div>
+            </div>
+            <button>Send</button>
+        </form>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
