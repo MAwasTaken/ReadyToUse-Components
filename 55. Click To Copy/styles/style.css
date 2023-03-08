@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'vazir';
+}
+
+body {
+    font-family: 'vazir';
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+textarea {
+    padding: 10px;
+    resize: none;
+    color: #202020;
+    text-align: justify;
+    font-size: 17px;
+    width: 500px;
+    height: 150px;
+}
+
+textarea:focus {
+    outline-color: #ff7300;
+    border-color: #ff7300;
+}
+
+.btn {
+    width: 500px;
+}
+
+button {
+    padding: 9px 15px;
+    border: none;
+    background-color: #ff7300;
+    color: #fff;
+    border-radius: 3px;
+    margin: 15px 0;
+    width: 200px;
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+}
+
+.btn .tooltip {
+    background-color: #ff7300;
+    padding: 3px;
+    color: #fff;
+    margin-left: -10px;
+    border-radius: 5px;
+    font-size: 15px;
+    position: relative;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+.btn .tooltip.show {
+    margin-left: 10px;
+    opacity: 1;
+
+}
+
+.btn .tooltip:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 9px solid #ff7300;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    position: absolute;
+    top: 5px;
+    left: -8px;
+}
