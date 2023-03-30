@@ -1,0 +1,112 @@
+@font-face {
+	font-family: "vazir";
+	src: url("../fonts/vazir.eot");
+	src: url("../fonts/vazir.ttf") format("truetype"), url("../fonts/vazir.woff2") format("woff2"), url("../fonts/vazir.woff") format("woff");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "vazir";
+	direction: ltr;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.container .title {
+	color: #000;
+	margin: 20px 0;
+	text-align: center;
+	font-size: 40px;
+}
+
+.gallery {
+	float: left;
+	width: 100%;
+	position: relative;
+  height: 70vh;
+}
+
+.gallery-items {
+	margin-bottom: 30px;
+}
+
+.gallery-items .item {
+	width: 25%;
+	float: left;
+	position: relative;
+}
+
+.gallery-items .item.hide {
+	display: none;
+}
+
+.gallery-items .item.show {
+	display: block;
+	animation: show 0.5s ease;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.gallery-items .item img {
+	width: 100%;
+	height: 140px;
+	display: block;
+}
+
+.gallery-items .item .caption {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.pagination {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.pagination .next,
+.pagination .prev {
+	border: 1px solid #999;
+	margin: 0 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.pagination .next.disable,
+.pagination .prev.disable {
+	border-color: rgb(180, 180, 180);
+	color: gray;
+  pointer-events: none;
+}
