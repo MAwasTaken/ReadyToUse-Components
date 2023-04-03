@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>Code Editor</title>
+	</head>
+	<body>
+    <div class="editor-menu">
+      <button class="btn btn-dark">Dark</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-run"><i class="fa fa-play"></i>Run</button>
+      <div class="live">
+        <label for="live">Live</label>
+        <input type="checkbox" id="live">
+      </div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="editor" contenteditable="">
+          hello world
+        </div>
+      </div>
+      <div class="bar"></div>
+      <div class="right">
+        <iframe src="" frameborder="0" class="iframe"></iframe>
+      </div>
+    </div>
+		<script src="js/script.js"></script>
+		<script src="js/all.min.js"></script>
+	</body>
+</html>
