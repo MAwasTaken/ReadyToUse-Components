@@ -1,0 +1,77 @@
+﻿@font-face {
+	font-family: "vazir";
+	src: url("../fonts/vazir.eot") format("eot"), url("../fonts/vazir.ttf") format("truetype"), url("../fonts/vazir.woff") format("woff"), url("../fonts/vazir.woff2") format("woff2");
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "vazir";
+	direction: rtl;
+}
+
+.section {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+}
+
+#home {
+	background: #aff8db;
+}
+
+#about {
+	background: #ffabab;
+}
+
+#footer {
+	background: #fff5ba;
+}
+
+.nav {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 15px;
+}
+.nav .nav-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.nav .nav-item .nav-label {
+	color: #000;
+	opacity: 0;
+	transition: opacity 0.1s;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.nav-link:hover ~ .nav-label {
+	opacity: 1;
+}
+
+.nav .nav-item .nav-link {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.3);
+	display: block;
+	transition: 0.1s;
+}
+
+.nav .nav-item .nav-link.nav-link-selected {
+	background: #000;
+	transform: scale(1.4);
+}
