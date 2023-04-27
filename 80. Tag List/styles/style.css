@@ -1,0 +1,118 @@
+﻿@font-face {
+	font-family: "vazir";
+	src: url("../fonts/vazir.eot") format("eot"), url("../fonts/vazir.ttf") format("truetype"), url("../fonts/vazir.woff") format("woff"), url("../fonts/vazir.woff2") format("woff2");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "vazir";
+}
+
+body {
+	font-family: "vazir";
+	direction: ltr;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #5372f0;
+}
+
+.wrapper {
+	width: 496px;
+	background: #fff;
+	border-radius: 10px;
+	padding: 18px 25px 20px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
+}
+
+.wrapper .title {
+	display: flex;
+	align-items: center;
+}
+
+.title h2 {
+	font-size: 21px;
+	font-weight: 600;
+	margin-left: 8px;
+}
+
+.wrapper .content {
+	margin: 10px 0;
+}
+
+.content p {
+	font-size: 15px;
+}
+
+.content ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 7px;
+	margin: 12px 0;
+	border-radius: 5px;
+	border: 1px solid #a6a6a6;
+}
+
+.content ul li {
+	color: #333;
+	margin: 4px 3px;
+	list-style: none;
+	border-radius: 5px;
+	background: #f2f2f2;
+	padding: 5px 8px 5px 10px;
+	border: 1px solid #e3e1e1;
+	display: flex;
+	align-items: center;
+}
+
+.content ul li svg {
+	height: 15px;
+	width: 15px;
+	color: #808080;
+	margin-left: 8px;
+	cursor: pointer;
+	border-radius: 50%;
+	background: #dfdfdf;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+}
+
+.content ul input {
+	flex: 1;
+	padding: 5px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+
+.wrapper .details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.wrapper .details span {
+	margin-right: 5px;
+}
+
+.wrapper button {
+	border: none;
+	outline: none;
+	color: #fff;
+	font-style: 14px;
+	cursor: pointer;
+	padding: 9px 15px;
+	border-radius: 5px;
+	background: #5372f0;
+	transition: background 0.3s ease;
+	font-family: "vazir";
+}
+
+.wrapper button:hover {
+	background: #2c52ed;
+}
