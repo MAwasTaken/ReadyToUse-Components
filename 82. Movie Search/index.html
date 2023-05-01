@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>Movie Search</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="logo">
+				<div class="container">
+					<p>Movie<span>Corn.</span></p>
+				</div>
+			</div>
+			<div class="search-container">
+				<div class="search-element">
+					<h3>search movie:</h3>
+					<input type="text" class="form-control" placeholder="Search Movie Title ..." id="movie-search-box" onkeyup="findMovies()" />
+					<div class="search-list" id="search-list">
+            <!-- element from js -->
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="result-container">
+					<div class="result-grid" id="result-grid">
+            <!-- element from hs -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/all.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
